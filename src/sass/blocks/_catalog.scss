@@ -131,7 +131,6 @@
             }
         }
         &__list {
-            position: relative;
             width: 50%;
             margin-left: 20px;
             transform: translateX(0%);
@@ -139,16 +138,16 @@
             transition: 0.5s all;
             padding-left: 19px;
             margin-bottom: 0;
-            list-style-type: none;
+            //list-style-type: none;
             &_active {
                 transform: translateX(-100%);
-                margin-left: 0px;
+                margin-right: 0px;
             }
-            li {
+            &__li {
                 position: relative;
-                color: #555555;
                 font-size: 14px;
                 font-weight: 300;
+                color: #555555;
                 margin-bottom: 20px;
                 &:before {
                     content: '';
